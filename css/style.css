@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500');
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+
+#home {
+  padding: 45px 0;
+}
+
+#about {
+  padding: 30px 0;
+  font-size: 1.25em;
+}
+
+#about ul {
+  position: relative;
+  top: -5px;
+  padding-left: 35px;
+}
+#about ul li {
+  padding: 5px 0 5px 5px;
+  list-style-type: disc;
+}
+
+.brand-logo img {
+  height: 64px;
+  width: auto;
+}
+@media screen and (max-width: 600px) {
+  .brand-logo img {
+    height: 56px;
+    width: auto;
+  }
+}
+
+.container {
+  max-width: 800px;
+}
+
+.lic-info {
+  padding: 5px 10px;
+}
+@media screen and (max-width: 600px) {
+  #lic-info .first {
+    text-align: center;
+  }
+  #lic-info .second {
+    text-align: center;
+  }
+}
+
+#tree-services {
+  padding: 30px 0;
+  font-size: 1.2em;
+}
+
+/* centers images for Tree Services */
+.shadow-img-div, {
+  display: flex;
+}
+.img-div {
+  display: inline-block;
+  margin: auto;
+}
+/* end centers for tree services */
+
+.ul-upper-div {
+  display: flex;
+}
+.ul-div {
+  margin: auto;
+}
+#gallery {
+  padding: 30px 0;
+}
+.slick-track {
+  display: flex;
+}
+.slick-track .slick-slide {
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+.container-own {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+#tree-services ul {
+  position: relative;
+  top: -15px;
+  left: 35px;
+}
+#tree-services ul li {
+  list-style-type: disc;
+}
+
+.button {
+  padding: 25px 0;
+}
+
+#contact .cont-img {
+  display: flex;
+}
+#contact img {
+  margin: 0 auto;
+  padding-top: 10%;
+}
+#contact ul {
+  font-size: 1.2em;
+}
+
+#contact .contact-valign {
+  display: flex;
+}
+#contact .contact-valign-child {
+  margin: auto 0;
+}
+
+.btn {
+  width: 65%;
+}
+
+.facebook-icon a {
+  color: white;
+}
+
+/* image alignment */
+.slider .slides li img {
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.slider .slides #img-left img {
+  background-size: contain;
+  background-position: top left;
+}
+.slider .slides #img-left .caption {
+  left: 25% ;
+}
+
+.slider .slides #img-right img {
+  background-size: contain;
+  background-position: top right;
+}
+.slider .slides #img-right .caption {
+  left: 5%;
+}
+
+.slider .slides #img-center img {
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 30%;
+  width: 100%;
+}
+
+.slider .slides #img-center h3, .slider .slides #img-center h5 {
+  text-shadow: 1px 1px 2px #434343;
+}
+.slider .slides #img-left h3, .slider .slides #img-left h5 {
+  text-shadow: 1px 1px 2px #424242;
+}
+.slider .slides #img-right h3, .slider .slides #img-right h5 {
+  text-shadow: 1px 1px 2px #424242;
+}
+
+@media screen and (max-width: 460px) {
+  .slider .slides #img-left img {
+    width: 100%;
+    background-size: cover;
+  }
+  .slider .slides #img-right img {
+    width: 100%;
+    background-size: cover;
+  }
+}
+
+.slider .indicators .indicator-item.active {
+  background-color: rgb(255, 150, 50);
+}
+.slider .indicators .indicator-item {
+  background-color: #d8d8d8;
+}
+
+.parallax-container {
+  height: 350px;
+}
+
+/* Return to Top */
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(255, 150, 50);
+  background: rgba(255, 149, 50, 0.75);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.5);
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top i {
+  color: white;
+  margin: 0;
+  position: relative;
+  left: 8px;
+  top: 9px;
+  font-size: 34px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top:hover {
+  background: rgba(255, 255, 255, 0.3);
+  /* box-shadow: 0 0 1px 1px rgb(185, 170, 142); */
+}
+#return-to-top:hover i {
+  color: rgb(255, 150, 50);
+  top: 4px;
+}
+/* Return to Top End */
+
+/* Materialize Custom colors */
+/* label color */
+.input-field label {
+  color: rgb(157, 156, 157);
+}
+/* label focus color */
+.input-field input[type=text]:focus + label, input[type=email]:focus + label, input[type=tel]:focus + label, textarea:focus + label {
+  color: rgb(255, 123, 0) !important;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, textarea:focus {
+  border-bottom: 1px solid rgb(255, 123, 0) !important;
+  box-shadow: 0 1px 0 0 rgba(255, 123, 0, 0.5) !important;
+}
+/* valid color */
+.input-field input[type=text].valid, input[type=email].valid {
+  border-bottom: 1px solid rgb(0, 125, 255) !important;
+  box-shadow: 0 1px 0 0 rgba(0, 123, 255, 0.5) !important;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix {
+  color: rgb(59, 59, 59) !important;
+}
+
+.input-field .prefix.active {
+  color: rgb(255, 123, 0) !important;
+}
+
+[type="checkbox"]:checked+span:not(.lever):before {
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid rgb(255, 123, 0); /* You need to change the colour here */
+  border-bottom: 2px solid rgb(255, 123, 0); /* And here */
+}
+
+.datepicker-date-display {
+  background-color: rgb(255, 123, 0);
+}
+
+.datepicker-cancel, .datepicker-done {
+  color: rgb(255, 123, 0);
+}
+
+.datepicker-table td.is-selected {
+  background-color: rgb(255, 123, 0);
+}
+
+button:focus {
+  background-color: rgb(255, 123, 0);
+}
+
+#honeypot {
+  display: none; /*makes the field not visible to humans*/
+}
+
+/* Image shadow Effect Not Materialize */
+.shadow-effect img {
+  border-radius: 4px;
+}
+.shadow-effect {
+  position: relative;
+}
+.shadow-effect:before, .shadow-effect:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 12px 10px #777;
+  -moz-box-shadow: 0 12px 10px #777;
+  box-shadow: 0 12px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.shadow-effect:after {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
