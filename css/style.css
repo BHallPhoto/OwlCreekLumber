@@ -46,14 +46,6 @@ body {
 .lic-info {
   padding: 5px 10px;
 }
-@media screen and (max-width: 600px) {
-  #lic-info .first {
-    text-align: center;
-  }
-  #lic-info .second {
-    text-align: center;
-  }
-}
 
 #tree-services {
   padding: 30px 0;
