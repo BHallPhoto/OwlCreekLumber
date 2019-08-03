@@ -80,9 +80,8 @@
       disableAllButtons(form);
       var url = form.action;
       var xhr = new XMLHttpRequest();
-      xhr.open('POST', url);
-      // xhr.withCredentials = true;
-      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      xhr.open('POST', url, true);
+      xhr.withCredentials = true;
       xhr.onreadystatechange = function() {
           console.log(xhr.status, xhr.statusText);
           console.log(xhr.responseText);
@@ -96,6 +95,7 @@
           }
           return;
       };
+      xhr.setRequestHeader("Content-Type", "application/json");
       // url encode form data for sending as post data
       var encoded = Object.keys(data).map(function(k) {
           return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);

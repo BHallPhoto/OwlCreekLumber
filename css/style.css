@@ -56,7 +56,7 @@ body {
 }
 
 /* centers images for Tree Services */
-.shadow-img-div, {
+.shadow-img-div {
   display: flex;
 }
 .img-div {
