@@ -43,7 +43,7 @@
   <!-- Navigation End -->
 
   <!-- Home Section, NO LINK! -->
-  <section id="lic-info" class="lic-info grey darken-1 row center-align orange-text">
+  <section id="lic-info" class="lic-info grey row center-align">
     <div class="center-align">
         <div>
             <span style="padding: 5px;">TLO: B10614</span>
@@ -51,6 +51,9 @@
         </div>
     </div>
   </section>
+  <div class="center-align">
+    <h3><b>Welcome to Owl Creek Lumber</b></h3>
+  </div>
   <section id="home" class="home">
     <div class="container">
       <div class="slider">
@@ -134,6 +137,7 @@
   <!-- Tree Services Section -->
   <section id="tree-services" class="tree-services scrollspy">
     <div class="container row">
+      <h3>Tree Services</h3>
       <div class="col l6 s12">
         <h5 class="center-align">Crane Services</h5>
         <div class="shadow-img-div">
@@ -269,6 +273,7 @@
               </div>
               <div class="input-field">
                 <p>Services required...</p>
+                <span>Check one box please.</span>
                 <div class="row">
                   <div class="col s6">
                     <p>
@@ -369,7 +374,9 @@
       $('.sidenav').sidenav();
       $('.scrollspy').scrollSpy();
       $('.slider').slider({
-        height: 500
+        indicators: false,
+        height: 500,
+        interval: 3500
       });
       $('.parallax').parallax();
   });/* spacer */</script>
